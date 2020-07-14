@@ -161,7 +161,7 @@ public class TestScheduler {
                 """)
                 break
             }
-            print("~~>\tid: \(next.id),\ttime: \(next.time),\tinterval: \(next.interval)")
+            print("~~>\tid: \(next.id),\ttime: \(next.time) (\(next.interval._duration))")
             if next.time > currentTime {
                 currentTime = next.time
             }
